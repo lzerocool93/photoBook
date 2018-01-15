@@ -1,0 +1,30 @@
+@font-face{
+	font-family: "PF Agora Sans Pro ";
+	src:url('../fonts/PFAgoraSansPro/PFAgoraSansPro-Bold_35303.ttf');
+	font-style: normal;
+	font-weight: bold;
+}
+@font-face{
+	font-family: "PF Agora Sans Pro Light ";
+	src:url('../fonts/PFAgoraSansPro/PFAgoraSansPro-Light_35306.ttf');
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face{
+	font-family: "PF Agora Sans Pro ";
+	src:url('../fonts/PFAgoraSansPro/PFAgoraSansPro-Regular_35310.ttf');
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face{
+	font-family: "PF Agora Sans Pro Thin ";
+	src:url('../fonts/PFAgoraSansPro/PFAgoraSansPro-Thin_35311.ttf')
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face{
+	font-family: "PF Agora Sans Pro XThin";
+	src:url('../fonts/PFAgoraSansPro/PFAgoraSansPro-XThin_35315.ttf');
+	font-style: normal;
+	font-weight: normal;
+}
