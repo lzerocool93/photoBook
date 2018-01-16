@@ -1,0 +1,155 @@
+
+@media screen and ( max-width: 927px){
+	.advantagesBlockItem{
+		margin-bottom: 40px;
+	}
+	.testimonialsBlock{
+		width: 90%;
+		margin:0 auto;
+	}
+	.nextTestimonial{
+		margin:30px 0 90px 0;
+	}
+}
+
+@media screen and (max-width:  750px){
+	.servicesImg{
+		width: 115px;
+		height: 115px;
+	}
+	.servicesText{
+		font-size:22px;	 
+	}
+	.photoBook{
+		padding:50px 0 160px 0; 
+	}
+}
+@media screen and (max-width: 600px){	
+	.burgerMenu{
+		margin-right:30px; 
+	}
+	.phone{
+		margin-right: 20px;
+		width:160px;
+	}
+	.photoBook{
+		padding:40px 0 130px 0; 
+	}
+	.photoBook h2{
+		font-size:50px;
+	}
+	.photoBook .btns{
+		padding:15px 25px;
+		font-size:22px;
+	}
+	.photoBookText{
+		font-size:22px;
+		margin-bottom: 25px;
+	}
+
+	.servicesItem{
+		width: 50%;
+	}
+	.servicesImg{
+		width: 140px;
+		margin:0 auto;
+	}
+	.servicesBlock::after{
+		border-bottom:none;
+	}
+	.servicesItem{
+		margin-bottom: 10px;
+	}
+
+}
+
+@media screen and (max-width: 480px){
+	.headerBlock{
+		justify-content: space-around;
+	}
+	.headerBlockLeft{
+		margin-bottom: 10px;
+	}
+	.photoBook .btns{
+		padding:10px 20px;
+		font-size:20px;
+	}
+	.advantages{
+		padding:40px 0 50px 0; 
+	}
+	.advantages h2{
+		margin-bottom: 40px;
+		font-size:45px;
+	}
+	
+	.advantages .btns{
+		padding:10px 20px;
+		font-size:20px;
+	}
+	
+	.solutions{
+		padding:40px 0 50px 0;
+	}
+	.solutions h2{
+		margin-bottom: 40px;
+		font-size:45px;
+	}
+	.testimonialsBlock h2{
+		font-size:45px;
+		margin-bottom: 40px;
+	}
+	.testimonialsBlock .btns{
+		padding:10px 20px;
+		font-size:20px;
+	}
+	.nextTestimonial{
+		margin:10px 0 40px 0;
+	}
+
+	.termsBlock{
+		padding:50px 0 60px 0; 
+	}
+	.termsBlock .btns{
+		padding:10px 20px;
+		font-size:20px;
+	}
+	.termsBlockBox{
+		margin-bottom: 40px;
+	}
+	.footerBlockBox{
+		flex-direction: column;
+	}
+	.footerBlockItem{
+		width: 90%;
+		margin:0 auto;
+		text-align: center;
+	}
+	.footerBlockItem::before{
+		width: 90%;
+	}
+	.socialIcons{
+		justify-content: center;
+	}
+	.footerAuthor{
+		display: none;
+	}
+	
+
+}
+
+@media screen and (max-width: 340px){
+	.servicesBlock{
+		padding: 20px 0 50px;
+	}
+	.servicesItem{
+		width: 100%;
+	}
+	
+	.photoBook{
+		padding:20px 0 70px 0; 
+	}
+	.photoBook h2{
+		font-size:35px;
+	}
+
+}

@@ -2,39 +2,29 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Photo Book</title>
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
 		
 	<!--header-->
-	<header class="header">
+	<header>
 			<div class="wrapper">
-				<div class="header__block">
-					<div class="header__block__left">
+				<div class="headerBlock">
+					<div class="headerBlockLeft">
 						<div class="burgerMenu">
 							<span class="burgerItem"></span>
 							<span class="burgerItem"></span>
 							<span class="burgerItem"></span>
 						</div>
-						<nav>
-							<ul class="topNavigation">
-								<li><a href="#">Home</a></li>
-								<li><a href="#">About Us</a></li>
-								<li><a href="#">Contacts</a></li>
-								<li><a href="#">Gallery</a></li>
-								<li><a href="#">PhotoBook</a></li>
-								<button class="hideMenu">Hide Menu</button>
-							</ul>
-						</nav>
-						<div class="header__block__logo">
-							<img src="images/logo.png" alt="logo">
-						</div>
+						<img src="images/logo.png" alt="logo" class="logo">
 					</div>
-					<div class="header__block__right">
+					<div class="headerBlockRight">
 						<div class="phone"><span>+11 235 813 2134</span></div>
 						<div class="signIn"><i class="fa fa-sign-in" aria-hidden="true"></i></div>
 					</div>
@@ -43,43 +33,48 @@
 	</header>
 	<!--/header-->
 	
+	<!--photoBook-->
 	<section class="photoBook">
 		<h2>Create your own photostory</h2>
 		<div class="photoBookText">Make your photobook online</div>
 		<div class="btns">make your photobook</div>
 	</section>
+	<!--/photoBook-->
 	
-	<section class="services">
+	<!--services-->
+	<section>
 		<div class="wrapper">
 			<div class="servicesBlock">
 				<div class="servicesItem">
 					<div class="servicesImg">	
-						<img src="images/downloadIcon.png" alt="">
+						<img src="images/downloadIcon.png" alt="download">
 					</div>
 					<div class="servicesText">Download <br>Photos</div>
 				</div>
 				<div class="servicesItem">
 					<div class="servicesImg">
-						<img src="images/designIcon.png" alt="">
+						<img src="images/designIcon.png" alt="design">
 					</div>
 					<div class="servicesText">Design your<br> photobook</div>
 				</div>
 				<div class="servicesItem">
 					<div class="servicesImg">
-						<img src="images/payIcon.png" alt="">
+						<img src="images/payIcon.png" alt="pay">
 					</div>
 					<div class="servicesText">Pay <br>for service</div>
 				</div>
 				<div class="servicesItem">
 					<div class="servicesImg">
-						<img src="images/getIcon.png" alt="">
+						<img src="images/getIcon.png" alt="services">
 					</div>
 					<div class="servicesText">Get your<br> photobook</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	
+	<!--/services-->
+
+	<!--advantages-->
 	<section class="advantages">
 		<div class="wrapper">
 			<h2>Advantage</h2>
@@ -106,11 +101,12 @@
 						<div class="advantagesBlockText">Lorem ipsum dolor sit amet, consectetur adipisicing. Ut enim ad minim, nostrud exercitation ullamco laboris nisi ut aliquip ex commodo.</div>
 					</div>
 				</div>
-				<div class="btns btns--red">make your photobook</div>		
+				<div class="btns btnsRed">make your photobook</div>		
 		</div>
 	</section>
+	<!--/advantages-->
 
-
+	<!--solution-->
 	<section class="solutions">
 		<div class="wrapper">
 			<h2>Ready solutions</h2>
@@ -127,9 +123,8 @@
 					</div>
 					<div class="solutionBlockItemFooter">Make your LightBook</div>
 				</div>
-
 				<div class="solutionBlockItem">
-					<div class="solutionBlockItemTitle">ClassicBook</div>	
+					<div class="solutionBlockItemTitle bestSellerBlock">ClassicBook</div>	
 					<div class="solutionBlockItemContent">
 						<ul>
 							<li>30x21 cm</li>
@@ -159,29 +154,32 @@
 			</div>
 		</div>
 	</section>
-
+	<!--/solutions-->
+	
+	<!--testimonials-->
 	<section class="testimonials">
 		<div class="wrapper">
 			<div class="testimonialsBlock">
 				<h2>Testmonials</h2>
 				<div class="person">
 					<div class="personImg">
-						<img src="images/personImg.png" alt="">
+						<img src="images/personImg.png" alt="person">
 					</div>
 					<div class="personInfo">
 						<div class="personName">John Doe</div>
 						<div class="personJob">Wedding photographer</div>
 					</div>
 				</div>
-				<p class="tesimonialText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-				<p class="tesimonialText">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+				<p class="testimonialText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+				<p class="testimonialText">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
 				<div class="nextTestiomonialBlock"><a href="#" class="nextTestimonial">Next testimonial</a></div>
 				<div class="btns">Make your photobook</div>
 			</div>
 		</div>
 	</section>
+	<!--/testimonials-->
 
-
+	<!--terms-->
 	<section class="terms">
 		<div class="wrapper">
 			<div class="termsBlock">
@@ -209,11 +207,11 @@
 						<div class="termsBlockItemTitle">Shipping</div>
 						<div class="termsBlockItemContent">
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-							<p class="atherText">Free shipping for<br>PremiumBook.</p>
+							<p class="otherText">Free shipping for<br>PremiumBook.</p>
 						</div>	
 					</div>
 				</div>
-				<div class="btns btns--red">Make your photoBook</div>
+				<div class="btns btnsRed">Make your photoBook</div>
 			</div>			
 		</div>
 	</section>
@@ -253,18 +251,17 @@
 						</div>	
 						<div class="footerAuthor">
 							<div class="footerAuthorTitle">Designed by</div>
-							<img src="images/footerLogo.png" alt="footerLogo">
+							<img src="images/footerLogo.png" alt="footerLogo" class="footerImg">
 						</div>
 					</div>
 				</div>
 				<div class="copy">
 						<p>&copy; 2018 Oleh Pavliv</p>
 				</div>
-			</div>
-					
+			</div>					
 		</div>
 	</footer>
 
-		<script src="js/common.js"></script>
+		
 </body>
 </html>

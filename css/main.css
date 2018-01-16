@@ -2,6 +2,7 @@
 /*default*/
 body{
 	font-family: "PF Agora Sans Pro", "Arial",sans-serif;
+	color:#000000;
 }
 a{
 	text-decoration: none;
@@ -10,10 +11,8 @@ ul{
 	list-style: none;
 	padding-left:0;
 }
-/*font: font-style font-variant font-weight font-size/line-height font-family*/
 h2{
-	color: #000000;
-	font:400 60px "PF Agora Sans Pro - X Thin" , "Arial", sans-serif;
+	font:400 60px "PF Agora Sans Pro - X Thin";
 	font-variant: small-caps;
 	letter-spacing: 1.32px;
 	margin:0;
@@ -21,7 +20,6 @@ h2{
 }
 
 h3{
-	color: #000000;
 	font:300 24px;
 }
 .btns{
@@ -32,18 +30,17 @@ h3{
 	letter-spacing: 1.16px;
 	border: 1px solid #010101;
 	border-radius: 10px;
-	text-align: center;
 	padding: 20px 30px;
 	box-shadow: 1px 1px 2px #000;
 	cursor: pointer;
 }
+.btnsRed{
+	background-color:#e11a27;
+	color:#fff;
+}
 .btns:hover{
 	box-shadow: -1px -1px 2px #000;
 	text-shadow: 1px 1px 2px #000;
-}
-.btns--red{
-	background-color:#e11a27;
-	color:#fff;
 }
 .wrapper{
 	max-width:1145px;
@@ -51,18 +48,18 @@ h3{
 }
 
 /*header*/
-.header{
-	padding:30px 0; 
-}
-.header__block{
-	display:flex;
-	justify-content: space-between;
-	align-items: center;
-}
-.header__block__left{
-	display: flex;
 
-	}
+.headerBlock{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content:space-between;
+	align-items:center;
+	padding:20px 0; 
+}
+.burgerMenu , .logo{
+	display: inline-block; 
+	vertical-align: middle;
+}
 	/*burger Menu*/
 .burgerMenu{
 	width: 25px;
@@ -71,7 +68,6 @@ h3{
 }
 .burgerItem{
 	display: block;
-	width:inherit;
 	height:2px;
 	margin-bottom:6px; 
 	background:#676465;
@@ -80,55 +76,10 @@ h3{
 	margin-bottom: 0;
 }
 	/*/burger Menu*/
-	/*navigation*/
-nav{
-	position: relative;
-}
-.topNavigation{
-	display: block;
-	position: absolute;
-	top:3px;
-	left:-345px;
-	background:rgba(0,0,0,.5); 	
-	width:150px; 
-	text-align: center;
-	transition:left 1.5s; 
-}
-.topNavigation li{
-	margin:10px 10px;
-	border-bottom:1px solid #ccc;
-	text-align: center; 
-}
-.topNavigation li a{
-	color:#fff;
-	font-family: "PF Agora Sans Pro", "Arial",sans-serif;
-	display: block;
-}
-.topNavigation li a:hover{
-	background:#ffd200; 
-	color:#000;
-}
-.hideMenu{
+
+.phone , .signIn{
 	display: inline-block;
-	color:#fff;
-	font-size:14px;
-	background: transparent;
-	margin-bottom:10px;
-	padding:5px 10px; 
-	border:1px solid #000;
-	border-radius:8px; 
-	box-shadow:1px 1px 2px #000; 
-	cursor:pointer;
-}
-.hideMenu:hover{
-	box-shadow:-1px -1px 2px #000;
-	color:#000;
-}
-	
-	/*/navigation*/
-.header__block__right{
-	display: flex;
-	align-items: center;
+	vertical-align: middle;
 }
 .phone{
 	width: 211px;
@@ -143,6 +94,7 @@ nav{
 	line-height: 37px;
 	text-transform: uppercase;
 	letter-spacing: 0.96px;
+	border-bottom:1px dashed #7a6814;
 }
 .signIn{
 	cursor: pointer;
@@ -156,13 +108,11 @@ nav{
 
 .photoBook{
 	text-align: center;
-	padding-top:50px;
-	padding-bottom: 275px;
+	padding:50px 0 275px; 
 	background:url(../images/photoBookBg.png) center top no-repeat; 	
 	background-size: cover;
 }
 .photoBookText{
-	color: #000000;
 	font-size: 24px;
 	font-weight: 300;
 	margin-bottom: 70px;
@@ -171,24 +121,25 @@ nav{
 
 
 /*services*/
-.services{
-	padding:55px 0 90px 0; 
-}
 
 .servicesBlock{
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
+	padding:55px 0 90px 0; 
 	position: relative;
-	
+}
+.servicesItem{
+	width:140px; 
 }
 .servicesBlock::after{
 	content: '';
 	position: absolute;
-	top:30%;
+	top:32%;
 	z-index: -1;
 	width: 99%;
+	margin-left:5px;
 	border-bottom: 3px dashed #ffd200;
-	margin:0 5px 0 5px;
 }
 .servicesImg{
 	width: 129px;
@@ -202,7 +153,6 @@ nav{
 	margin-bottom: 25px;
 }
 .servicesText{
-	color: #000000;
 	text-align: center;
 	font-size: 24px;
 	font-weight: 300;
@@ -212,73 +162,90 @@ nav{
 /*advantages*/
 
 .advantages{
-	padding:65px 0 75px 0; 
 	background:#f3f0e7; 
 	text-align: center;
+	padding:65px 0 75px 0; 
 }
 .advantages h2{
 	margin-bottom:65px; 
 }
 .advantagesBlock{
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
+	flex-wrap: wrap;
 	
 }
 .advantagesBlockItem{
 	width:267px;
 	margin:2%; 
+	margin-bottom:90px;
 }
 .advantagesBlockImg{
-	width: 267px;
-	margin:0 auto;
 	height: 267px;
 	background: #fff;
 	border-radius:50%; 
-	/*display: inline-block;*/
 	display: flex;
 	justify-content: center;
 	align-items:center;
 	margin-bottom:24px; 
 }
 .advantagesBlockTitle{
-	color: #000000;
 	font-size: 24px;
 	font-weight: 300;
 	margin-bottom: 25px;
 }
 .advantagesBlockText{
-	color: #000000;
 	font-size: 16px;
 	font-weight: 300;
-	margin-bottom:95px;
 }
 /*/advantages*/
 
-/*solution*/
+/*solutions*/
 
 .solutions{
-	padding:70px 0  115px 0; 
+	padding:70px 0  55px 0; 
 }
 .solutions h2{
 	margin-bottom: 80px;
 }
 .solutionsBlock{
 	display: flex;
-	justify-content:space-between;
+	justify-content:space-around;
 	flex-wrap: wrap;
 }
 .solutionBlockItem{
 	border:3px solid #ffd200;
 	border-radius: 10px;
-	flex-basis: 30%;
+	width:313px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	flex-wrap: wrap;
+	margin-bottom: 50px;
 }
+.bestSellerBlock{
+	position: relative;
+}
+.bestSellerBlock::before{
+	content: 'BESTSELLER';
+	width: 193px;
+	height: 44px;
+	position: absolute;
+	top:-22px;
+	left:66px;
+	z-index: -2;
+	text-align: center;
+	background:url('../images/bestSellerBg.png') no-repeat;
+	color: #e11a27;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 26px;
+	font-variant: small-caps;
+	letter-spacing: 0.53px; 
 
+
+}
 .solutionBlockItemTitle{
-	color: #000000;
 	font-size: 36px;
 	font-weight: 400;
 	font-variant: small-caps;
@@ -297,12 +264,10 @@ nav{
 }
 .solutionBlockItemContent ul li{
 	position: relative;
-	line-height: 20px;
-	color: #000000;	
+	line-height: 20px;	
 	font-size: 18px;
 	font-weight: 400;
 	padding-left:10px;
-
 }
 .solutionBlockItemContent ul li::before{
 	content:'';
@@ -311,10 +276,8 @@ nav{
 	height: 26px;
 	background:url(../images/check.png) center 6px no-repeat; 
 	margin-right:15px;
-	
 }
 .solutionBlockItemFooter{
-	color: #000000;
 	background: #ffd200;
 	font-size: 22px;
 	font-weight: 400;
@@ -322,19 +285,16 @@ nav{
 	padding:12px 0 ;
 	letter-spacing: 1.16px;
 	letter-spacing: 1.54px;
-	font-variant: small-caps;
-	
+	font-variant: small-caps;	
 }
 .price{
-	color: #000000;
 	font-size: 60px;
 	font-weight: 300;
 	letter-spacing: -1.32px;
 	text-align: center;
-
 }
 
-/*/solution*/
+/*/solutions*/
 
 
 /*testimonials*/
@@ -348,44 +308,31 @@ nav{
 	width:45%; 
 	text-align: center;
 }
-.testimonialsBlock p{
-	text-align: left;
-}
+
 .testimonialsBlock h2{
 	text-align: left;
 	margin-bottom:50px; 
 }
-/* .person::after , .person::before{
-	content: '';
-	display: block;
-	clear:both;
-} */
 .person{
 	overflow: hidden;
+	display:flex;
+	align-items:center;
 }
 .personImg{
 	float:left;
 	margin-right:30px; 
 }
-.person{
-	display: flex;
-	align-items: center;
-
-}
 .personName{
-	color: #000000;
 	font-size: 30px;
 	font-weight: 300;
 	font-variant: small-caps;
 	letter-spacing: 0.66px
 }
 .personJob{
-	color: #000000;
 	font-size: 18px;
 	font-weight: 300;
 }
 .testimonialText{
-	color: #000000;
 	font-size: 18px;
 	font-weight: 300;
 	text-align:left;
@@ -396,10 +343,8 @@ nav{
 .nextTestimonial{
 	display: inline-block; 
 	margin:50px 0 110px 0;
-	color: #000000;
-	font-family: "PF Agora Sans Pro - Thin";
-	font-size: 16px;
-	font-weight: 400;
+	color:#000;
+	font:400 16px "PF Agora Sans Pro - Thin";
 	cursor: pointer;
 }
 
@@ -424,19 +369,17 @@ nav{
 }
 .termsBlockBox{
 	display:flex;
-	justify-content: space-between;
-	margin:0 -10px 80px;
-
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin:0 0 80px;
 }
 .termsBlockItem{
-	flex-basis: 313px;
-	margin:0 10px;
+	width: 313px;
+	margin:0 10px 15px 10px;
 	border-radius: 0 0 10px 10px;
 	background-color: #f7f0e6;
-
 }
 .termsBlockItemTitle{
-	color: #000000;
 	border-radius: 10px 10px 0 0;
 	background-color: #ffd200;
 	font-size: 36px;
@@ -456,12 +399,9 @@ nav{
 }
 .termsBlockItemContent p{
 	margin:0;
-	color: #000000;
-	font-family: "PF Agora Sans Pro";
-	font-size: 18px;
-	font-weight: 400;
+	font:400 18px "PF Agora Sans Pro";
 	line-height:21px; 
-}
+}	
 .termsBlockItemContent ul{
 	list-style:disc; 
 	padding-left: 20px;
@@ -469,7 +409,7 @@ nav{
 .termsBlockItemContent ul li{
 	margin-bottom: 7px;
 }
-.termsBlockItemContent .atherText{
+.termsBlockItemContent .otherText{
 	color: #e11a27;
 	font-weight: 700;
 	letter-spacing: 1.44px;
@@ -488,15 +428,12 @@ nav{
 .footerBlockBox{
 	display: flex;
 	justify-content:space-between; 
-	overflow: hidden;
-}
-.footerBlockItem {
-	position: relative;
+
 }
 .footerBlockItem::before{
 	content:'';
 	display: block;
-	width: 152px;
+	width: 10%;
 	height: 1px;
 	background-color: #000000;
 	position: absolute;
@@ -554,3 +491,5 @@ nav{
 	font-variant: small-caps;
 }
 /*/footer*/
+
+/*1199px , 991px , 767px , 479px , 320px*/
